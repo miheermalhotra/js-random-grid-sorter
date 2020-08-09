@@ -41,19 +41,11 @@ function preload(list) {
   let items = list ? list : listElement;
   var app = document.querySelector("#app");
   app.innerHTML =
-    '<ul class="grid-container">' +
-    items
-      .map(function (item) {
-        return (
-          '<li class="grid-item" style=background-color:' +
-          `${item.color}` + ';border-color:' + `${item.color}` +
-          ">" +
-          item.id +
-          "</li>"
-        );
-      })
-      .join("") +
-    "</ul>";
+  '<ul class="grid-container">' +
+  items
+    .map(function (item) {
+      return `<li class='grid-item' style=background-color:${item.color};border-color:${item.color}> ${item.id}</li>`;
+    }).join('') + '</ul>';
 }
 function sortList() {
   var list = listElement.sort();
