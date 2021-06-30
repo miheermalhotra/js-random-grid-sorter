@@ -1,4 +1,4 @@
-# Maersk UI assignment
+# Random Grid Sorter
 
 This application contains core JavaScript concepts to show the grid items. I have not used any library for passing the information.
 I have used the data from object and parsed it on the html using es6 methods for map
